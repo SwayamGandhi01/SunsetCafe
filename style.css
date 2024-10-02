@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    background: #000;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #00000000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(48, 48, 48);
+    
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(27, 27, 27);
+  }
+#main {
+    /* width: 100vw; */
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100vw;
+    height: 100px;
+    background: #00000097 !important;
+    backdrop-filter: blur(20px);
+    position: fixed !important;
+    z-index: 99;
+    border-bottom: 1px solid black;
+    color: white;
+    overflow-x: hidden;
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+.BrsndName {
+    display: flex;
+    align-items: center;
+}
+
+.searchTextbox {
+    padding: 5px 15px;
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.612);
+    border-radius: 50px;
+    
+}
+
+.search-btn {
+    background: transparent;
+    border: 0;
+
+}
+
+.search-btn img {
+    width: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: invert();
+}
+
+.nav-item {
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: inherit;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+.nav-item a {
+    color: #fff !important;
+}
+
+.nav-item:focus,
+.nav-item:hover {
+    color: #fff;
+}
+
+.nav-item:focus:after,
+.nav-item:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+.nav-item:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background-color: #ffffff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+
+}
+
+.section {
+    width: 100vw;
+}
+
+#page1 {
+    /* width: 100%; */
+    height: 100vh;
+    background: url(images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.365) 50%, rgba(0, 0, 0, 1) 100%);
+}
+.front-head{
+    display: flex;
+    justify-content: center;
+}
+.front-head h1{
+    margin: 200px 0;
+    font-size: 5rem;
+}
+.marketing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img-card{
+    overflow: hidden;
+    cursor: pointer;
+}
+.img-card img:hover{
+    filter: saturate(0.8);
+}
+
+.ImgCover{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 50px 0;
+}
+.card1 img{
+    width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all ease-in-out 0.5s;
+}
+.card1 img:hover{
+    transform: scale(1.2);
+}
+.card1 h2{
+
+    font-size:1.5rem;
+}
+.lead{
+    color: #ffffffc3;
+}
+
+footer{
+    background: #000;
+}
